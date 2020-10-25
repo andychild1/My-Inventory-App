@@ -1,0 +1,46 @@
+.listName {
+    list-style-type: none;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: auto;
+    padding: 5px 10px 5px 10px;
+    margin: 5px;
+    color: gold;
+    background-color: darkviolet;
+    display: inline-block;
+}
+
+.list {
+    width: auto;
+    text-align: center;
+
+}
+
+ul {
+    margin: 0 auto;
+}
+
+.inputSave {
+    padding: 5px;
+    margin: 5px;
+    left: 25px;
+}
+
+button {
+    padding: 5px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    width: 80px;
+    color: gold;
+    background-color: darkviolet;
+}
+
+.buttonList {
+    border-radius: 20px;
+    width: 30px;
+}
+
+.saveList {
+    left: 20px;
+}

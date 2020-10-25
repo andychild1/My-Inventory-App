@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+  background-color: darkblue;
+  margin: 0 auto;
+  height: 100%;
+}
+
+h1 {
+  color: gold;
+}
+
+input {
+  padding: 5px;
+}

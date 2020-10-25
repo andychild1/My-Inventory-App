@@ -1,0 +1,16 @@
+.item {
+    display: inline-block;
+    color: gold;
+    text-align: center;
+}
+
+.itemButton {
+    width: 50px;
+    font-size: 20px;
+    border-radius: 20px;
+
+}
+
+.divList {
+    text-align: left;
+}
