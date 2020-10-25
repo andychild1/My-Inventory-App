@@ -4,6 +4,8 @@ import Input from '../Input/Input';
 import List from '../List/List';
 import MyApi from '../../util/MyApi';
 import ListName from '../ListName/ListName';
+import Register from '../Register/Register';
+import Login from '../Login/Login';
 
 class App extends React.Component {
   constructor(props) {
@@ -13,7 +15,8 @@ class App extends React.Component {
       input: '',
       list: [],
       name: '',
-      listName: []
+      listName: [],
+      isLogged: false
     }
     this.handleInput = this.handleInput.bind(this);
     this.addItems = this.addItems.bind(this);
@@ -24,6 +27,7 @@ class App extends React.Component {
     this.addListName = this.addListName.bind(this);
     this.showList = this.showList.bind(this);
     this.removeListName = this.removeListName.bind(this);
+    this.logUser = this.logUser.bind(this);
   }
 
   handleInput(event) {
@@ -79,10 +83,6 @@ class App extends React.Component {
 this.setState({list: value});
   }
 
-componentDidMount() {
-  this.loadApi();
-}
-
 removeListName(value) {
   let savedName = this.state.listName;
   savedName = savedName.filter(name => value !== name.name);
@@ -90,8 +90,14 @@ removeListName(value) {
   MyApi.delete(value);
 }
 
+logUser() {
+  this.setState({isLogged: true});
+}
+
   render() {
-  return (
+
+    if (this.state.isLogged) {
+return (
     <div className="App">
       <h1>My Inventory</h1>
       <ListName onRemove={this.removeListName} listItems={this.state.listName} show={this.showList} addList={this.addListName} save={this.saveListName}  name={this.state.name} />
@@ -99,9 +105,31 @@ removeListName(value) {
       <h3>{this.state.input}</h3>
       <List remove={this.removeItem} items={this.state.list} />
     </div>
-  );
-
+   );
+    } else {
+      return(<div className="welcome">
+          <h1>Welcome</h1>
+          <Login />
+          <h3>Or</h3>
+           <Register isLogged={this.logUser} />
+      </div>
+      ) 
+    }
   }
+  
+componentDidMount() {
+  this.loadApi();
+}
+
+componentWillUnmount() {
+  this.setState({
+    input: '',
+    list: [],
+    name: '',
+    listName: []
+  });
+}
+
 };
 
 export default App;
