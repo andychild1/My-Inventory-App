@@ -1,13 +1,15 @@
 .App {
-  text-align: center;
   background-color: darkblue;
   margin: 0 auto;
+  padding: 20px;
   height: 100%;
+  text-align: center;
 }
 
 h1 {
   color: darkorange;
-  margin-top: 30px;
+  margin: 0 auto;
+  width: 60%;
 }
 
 input {
@@ -16,4 +18,26 @@ input {
 
 .welcome {
   text-align: center;
+}
+
+
+.loadButton {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  text-align: center;
+  width: 6%;
+  color: darkorange;
+  position: absolute;
+}
+
+.logOutButton {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 92%;
+   margin: 5px;
+   text-align: center;
+   width: 6%;
+  color: darkorange;
 }

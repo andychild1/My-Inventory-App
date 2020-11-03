@@ -1,41 +1,22 @@
 import React from 'react';
+import './Login.css';
+import { useAuth0 } from '@auth0/auth0-react';
 
-class Login extends React.Component {
-    constructor(props) {
-        super(props);
+const Login = () => {
 
-        this.state = {
-            username: '',
-            password: ''
-        }
+        const { loginWithRedirect, isAuthenticated } = useAuth0();
 
-        this.handleUsername = this.handleUsername.bind(this);
-        this.handlePassword = this.handlePassword.bind(this);
-    }
-
-        handleUsername(e) {
-            this.setState({username: e.target.value});
-        }
-
-        handlePassword(e) {
-            this.setState({password: e.target.value});
-        }
-
-        submit() {
-           let username = this.state.username;
-           let password = this.state.password;
-        }
-
-    render() {
         return(
-            <div>
-                <h3>Login</h3>
-                <input onChange={this.handleUsername} type="text" placeholder="username" />
-                <input onChange={this.handlePassword} type="password" placeholder="password" />
-                <button>Submit</button>
+            !isAuthenticated && (
+                <div className="login">
+                 <h1>Welcome to my Inventory App</h1>
+             <h1>Click Start to sign up</h1>
+            <button className="start" onClick={() => loginWithRedirect()}>
+                START
+            </button>
             </div>
+            )
         );
-    }
 };
 
 export default Login;

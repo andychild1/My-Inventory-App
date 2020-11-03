@@ -1,26 +1,76 @@
 const fetch = require('node-fetch');
 
 const MyApi = {
-   async getList() {
+   async getList(id) {
        try {
-        const response = await fetch(`http://localhost:4001/lists`, {headers: {'Access-Control-Allow-Origin': 'http://localhost:3000/'}
-        });
+        const response = await fetch('http://192.168.1.53:4001/api/list/'+id);
         return response.json();
     } catch (err) {
         console.log(err);
     }
 },
 
-save(name, list) {
-    return fetch(`http://localhost:4001/items?name=${name}&items=${list}`, {
+saveList(id, name, list) {
+
+    let payload = {
+        username: id,
+        name: name,
+        items: list
+    }
+    return fetch(`http://192.168.1.53:4001/api/items`, { headers: {
+        'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json'
+    },
         method: 'POST',
-        body: JSON.stringify(name, list),
-        contentType: "application/json; charset=utf-8"
+        body: JSON.stringify(payload)
     });
 },
 
-delete(name) {
-    return fetch(`http://localhost:4001/items/${name}`, {method: 'DELETE'});
+async delete(id) {
+    try {
+         const response = await fetch(`http://192.168.1.53:4001/api/list/delete/${id}`, {method: 'POST', headers: {
+        'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json'}});
+         return response.json();
+        
+    } catch (err) {
+        console.log(err);
+    }
+   
+},
+
+saveUser(email, id) {
+    let bodyRequest = {
+        username: email,
+        password: id
+    }
+    return fetch(`http://192.168.1.53:4001/api/users/register`, {
+        method: 'POST',
+        headers: {
+        'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(bodyRequest)
+    }).then(response => {
+       return response.json();
+    });
+},
+
+ login(username, password) {
+     let payload = {
+         username: username,
+         password: password
+     }
+    return fetch(`http://192.168.1.53:4001/api/users/login`,{ 
+        headers: {
+             'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json'
+        },
+        method: 'POST',
+        body: JSON.stringify(payload)
+    }).then(response => {
+        return response.json();
+    })
 }
 
 };
