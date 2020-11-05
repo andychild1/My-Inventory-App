@@ -1,12 +1,13 @@
 import React from 'react';
+import './input.css';
 
 class Input extends React.Component {
     render() {
         return(
             <div>
-                <input onFocus={this.props.focus} onChange={this.props.onChange} type="text" placeholder="add items..." />
+                <input className="inputItem" onFocus={this.props.focus} onChange={this.props.onChange} type="text" placeholder="add items..." />
                 <br />
-                <button onClick={this.props.onClick} >Add</button>
+                <button className="addButton" onClick={this.props.onClick} >Add</button>
             </div>
         );
     }

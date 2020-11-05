@@ -3,7 +3,7 @@ const fetch = require('node-fetch');
 const MyApi = {
    async getList(id) {
        try {
-        const response = await fetch('http://192.168.1.53:4001/api/list/'+id);
+        const response = await fetch('https://limitless-plains-93187.herokuapp.com/api/list/'+id);
         return response.json();
     } catch (err) {
         console.log(err);
@@ -17,7 +17,7 @@ saveList(id, name, list) {
         name: name,
         items: list
     }
-    return fetch(`http://192.168.1.53:4001/api/items`, { headers: {
+    return fetch(`https://limitless-plains-93187.herokuapp.com/api/items`, { headers: {
         'Accept': 'application/json, text/plain, */*',
     'Content-Type': 'application/json'
     },
@@ -28,7 +28,7 @@ saveList(id, name, list) {
 
 async delete(id) {
     try {
-         const response = await fetch(`http://192.168.1.53:4001/api/list/delete/${id}`, {method: 'POST', headers: {
+         const response = await fetch(`https://limitless-plains-93187.herokuapp.com/api/list/delete/${id}`, {method: 'POST', headers: {
         'Accept': 'application/json, text/plain, */*',
     'Content-Type': 'application/json'}});
          return response.json();
@@ -44,7 +44,7 @@ saveUser(email, id) {
         username: email,
         password: id
     }
-    return fetch(`http://192.168.1.53:4001/api/users/register`, {
+    return fetch(`https://limitless-plains-93187.herokuapp.com/api/users/register`, {
         method: 'POST',
         headers: {
         'Accept': 'application/json, text/plain, */*',
@@ -61,7 +61,7 @@ saveUser(email, id) {
          username: username,
          password: password
      }
-    return fetch(`http://192.168.1.53:4001/api/users/login`,{ 
+    return fetch(`https://limitless-plains-93187.herokuapp.com/api/users/login`,{ 
         headers: {
              'Accept': 'application/json, text/plain, */*',
     'Content-Type': 'application/json'

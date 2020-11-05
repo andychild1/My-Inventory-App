@@ -1,0 +1,16 @@
+
+.logOutButton {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 20px;
+    left: 1600px;
+     margin: 5px;
+     width: 6%;
+    color: darkorange;
+  }
+
+  .logOut {
+      position: relative;
+      left: 15px;
+  }

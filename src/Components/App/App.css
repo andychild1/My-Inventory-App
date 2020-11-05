@@ -12,14 +12,22 @@ h1 {
   width: 60%;
 }
 
+h5 {
+  font-size: 15px;
+}
+
 input {
-  padding: 5px;
+  padding: 10px;
 }
 
 .welcome {
   text-align: center;
 }
 
+.load {
+  position: relative;
+  left: 10px;
+}
 
 .loadButton {
   display: flex;
@@ -29,15 +37,4 @@ input {
   width: 6%;
   color: darkorange;
   position: absolute;
-}
-
-.logOutButton {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  left: 92%;
-   margin: 5px;
-   text-align: center;
-   width: 6%;
-  color: darkorange;
 }

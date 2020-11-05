@@ -102,12 +102,11 @@ return (
     <div className="App">
       <h1>My Inventory</h1>
       <div className="loadButton">
-        <h5>Load saved list</h5>
-      <button onClick={this.loadApi} >Load</button>
+        <h5>Load saved list, click on a list name to update your list</h5>
+      <button className="load" onClick={this.loadApi} >Load</button>
       </div>
-      <div className="logOutButton">
-        <h5>Welcome {this.state.nickname}</h5>
-        <LogOut />
+      <div>
+        <LogOut nickname={this.state.nickname}/>
       </div>
       <ListName onRemove={this.removeListName} listItems={this.state.listName} show={this.showList} addList={this.addListName} save={this.saveListName}  name={this.state.name} />
       <Input focus={this.clearInput} onChange={this.handleInput} onClick={this.addItems} />
