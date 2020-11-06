@@ -1,8 +1,9 @@
 
-.logOutButton {
+.loadButton {
     display: flex;
     flex-direction: column;
     color: gold;
     align-items: center;
+    width: 10%;
     margin: 20px;
   }

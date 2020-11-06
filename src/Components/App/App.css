@@ -1,40 +1,27 @@
 .App {
   background-color: darkblue;
   margin: 0 auto;
-  padding: 20px;
   height: 100%;
   text-align: center;
 }
 
 h1 {
-  color: darkorange;
+  color: gold;
   margin: 0 auto;
-  width: 60%;
+  background-color: darkviolet;
+  padding: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
 }
 
 h5 {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 input {
   padding: 10px;
-}
-
-.welcome {
-  text-align: center;
-}
-
-.load {
-  position: relative;
-  left: 10px;
-}
-
-.loadButton {
-  display: flex;
-  flex-direction: column;
-  margin: 5px;
-  text-align: center;
-  width: 6%;
-  color: darkorange;
-  position: absolute;
 }

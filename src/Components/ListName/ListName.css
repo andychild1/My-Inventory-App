@@ -19,8 +19,6 @@
 ul {
     margin: 0;
     text-align: start;
-    position: relative;
-    right: 40px;
 }
 
 .inputSave {
@@ -39,6 +37,7 @@ button {
 }
 
 .buttonList {
+    margin: 15px;
     border-radius: 20px;
     width: 30px;
 }
