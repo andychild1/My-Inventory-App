@@ -101,7 +101,6 @@ loadApi() {
 
 return (
     <div className="App">
-      <h1>My Inventory</h1>
       <div className="nav">
       <LoadButton onLoad={this.loadApi}/>
       <div>

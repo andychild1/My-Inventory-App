@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from '../Header/Header';
 import { useAuth0 } from '@auth0/auth0-react';
 import App from '../../Components/App/App';
 
@@ -9,6 +10,7 @@ const Profile = () => {
     return (
         isAuthenticated && (
          <div>
+             <Header />
              <App user={user}/>
          </div>
         )

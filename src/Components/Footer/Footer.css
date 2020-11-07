@@ -1,0 +1,16 @@
+
+.foot {
+    text-align: center;
+    background-color: darkviolet;
+    padding: 30px;
+    color: gold;
+    margin-top: 186px;
+  }
+
+  .gitIcon {
+    width: 30px;
+    margin-left: 8px;
+    position: relative;
+    top: 5px;
+  }
+  

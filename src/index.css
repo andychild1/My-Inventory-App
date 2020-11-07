@@ -1,17 +1,9 @@
 body {
   margin: 0 auto;
   background-color:darkblue;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
 
-footer {
-  text-align: center;
-  background-color: darkviolet;
-  padding: 20px;
-  color: gold;
-  margin-top: 400px;
+#root {
+  height: auto;
 }
-
 

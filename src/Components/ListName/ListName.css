@@ -9,6 +9,7 @@
     color: gold;
     background-color: #9400D3;
     display: inline-block;
+    cursor: pointer;
 }
 
 .list {
@@ -34,10 +35,12 @@ button {
     width: 80px;
     color: gold;
     background-color: #9400D3;
+    cursor: pointer;
 }
 
 .buttonList {
     margin: 15px;
     border-radius: 20px;
     width: 30px;
+    cursor: pointer;
 }

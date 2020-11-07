@@ -4,7 +4,9 @@
 
 .start {
     padding: 30px;
-    margin-top: 160px;
+    margin-top: 200px;
+    margin-bottom: 8px;
     width: 150px;
     font-size: 20px;
+    cursor: pointer;
 }
