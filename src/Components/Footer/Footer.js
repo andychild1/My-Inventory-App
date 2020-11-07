@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className="foot">
         <footer>
-     Copyright &copy 2020 A.T. Web Dev. All Rights Reserved
+     Copyright © 2020 A.T. Web Dev. All Rights Reserved
     </footer>
     <p>Follow me on gitHub
         <a href="https://github.com/andychild1" target="_blank" rel="noopener noreferrer">

@@ -10,3 +10,9 @@
   .logOut {
     cursor: pointer;
   }
+
+  @media screen and (max-width: 800px) {
+    .logOutButton {
+      margin: 10px;
+    }
+  }

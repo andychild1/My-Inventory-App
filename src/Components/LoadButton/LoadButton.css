@@ -4,10 +4,16 @@
     flex-direction: column;
     color: gold;
     align-items: center;
-    width: 10%;
-    margin: 20px;
+    width: auto;
+    margin: 10px;
   }
 
   .load {
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 800px) {
+    .loadButton {
+      margin-left: 10px;
+    }
   }

@@ -18,3 +18,14 @@
     text-align: left;
     height: 60px;
 }
+
+@media screen and (max-width: 800px) {
+    .item {
+        margin: 10px;
+    }
+
+    .itemButton {
+        width: 20px;
+        font-size: 6px;
+    }
+}

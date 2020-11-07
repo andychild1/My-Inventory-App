@@ -44,3 +44,27 @@ button {
     width: 30px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 800px) {
+    button {
+        padding: 5;
+        font-size: 8px;
+    }
+
+    .listName {
+        padding: 3px;
+        font-size: 10px;
+    }
+
+    .inputSave {
+        padding: 5px;
+        margin: 5px;
+        left: 25px;
+    }
+
+    .buttonList {
+        width: 20px;
+        margin: 5px;
+        padding: 3px;
+    }
+}
