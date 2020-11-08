@@ -1,5 +1,6 @@
 import React from 'react';
 import './Login.css';
+import CookieConsent from "react-cookie-consent";
 import { useAuth0 } from '@auth0/auth0-react';
 
 const Login = () => {
@@ -14,6 +15,15 @@ const Login = () => {
             <button className="start" onClick={() => loginWithRedirect()}>
                 START
             </button>
+            <CookieConsent enableDeclineButton flipButtons
+            location="bottom"
+            declineButtonText="Decline"
+            buttonText="Accept"
+            cookieName="myAwesomeCookieName2"
+            style={{ background: "black", color: "gold", padding: 10, fontSize: "18px" }}
+            buttonStyle={{background: "darkviolet", color: "gold", fontSize: "13px" }}
+            expires={150}
+            >This website uses cookies to enhance the user experience.</CookieConsent>
             </div>
             )
         );
