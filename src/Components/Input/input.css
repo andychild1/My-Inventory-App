@@ -5,3 +5,9 @@
 .inputItem {
     margin: 5px;
 }
+
+@media screen and (max-width: 800px) {
+    .addButton {
+        margin-bottom: 60px;
+    }
+}
