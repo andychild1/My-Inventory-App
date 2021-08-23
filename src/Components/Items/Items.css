@@ -1,0 +1,31 @@
+.item {
+    display: inline-block;
+    color: gold;
+    text-align: center;
+     margin: 20px;
+}
+
+.itemButton {
+    width: 30px;
+    font-size: 10px;
+    border-radius: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+.divList {
+    text-align: left;
+    height: 60px;
+}
+
+@media screen and (max-width: 800px) {
+    .item {
+        margin: 10px;
+    }
+
+    .itemButton {
+        width: 20px;
+        font-size: 6px;
+    }
+}

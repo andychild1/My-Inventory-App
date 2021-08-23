@@ -1,0 +1,70 @@
+.listName {
+    list-style-type: none;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: auto;
+    padding: 5px;
+    margin: 5px;
+    color: gold;
+    background-color: #9400D3;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.list {
+    text-align: center;
+    margin-top: 20px;
+}
+
+ul {
+    margin: 0;
+    text-align: start;
+}
+
+.inputSave {
+    padding: 10px;
+    margin: 5px;
+    left: 25px;
+}
+
+button {
+    padding: 5px;
+    margin-bottom: 2px;
+    margin-top: 5px;
+    width: 80px;
+    color: gold;
+    background-color: #9400D3;
+    cursor: pointer;
+}
+
+.buttonList {
+    margin: 15px;
+    border-radius: 20px;
+    width: 30px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    button {
+        padding: 5;
+        font-size: 8px;
+    }
+
+    .listName {
+        padding: 3px;
+        font-size: 10px;
+    }
+
+    .inputSave {
+        padding: 5px;
+        margin: 5px;
+        left: 25px;
+    }
+
+    .buttonList {
+        width: 20px;
+        margin: 5px;
+        padding: 3px;
+    }
+}

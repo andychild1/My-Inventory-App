@@ -1,0 +1,19 @@
+
+.loadButton {
+    display: flex;
+    flex-direction: column;
+    color: gold;
+    align-items: center;
+    width: auto;
+    margin: 10px;
+  }
+
+  .load {
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 800px) {
+    .loadButton {
+      margin-left: 10px;
+    }
+  }

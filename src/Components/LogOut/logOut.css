@@ -1,0 +1,18 @@
+
+.logOutButton {
+    display: flex;
+    flex-direction: column;
+    color: gold;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .logOut {
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 800px) {
+    .logOutButton {
+      margin: 10px;
+    }
+  }
