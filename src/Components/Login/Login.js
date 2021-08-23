@@ -11,7 +11,7 @@ const Login = () => {
             !isAuthenticated && (
                 <div className="login">
                  <h1>Welcome to my Inventory App</h1>
-             <h1>Start to begin</h1>
+             <h2>Press Start to begin</h2>
             <button className="start" onClick={() => loginWithRedirect()}>
                 START
             </button>

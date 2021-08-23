@@ -1,14 +1,14 @@
 .App {
-  background-color: darkblue;
+  background-color: #09E2E6;
   margin: 0 auto;
   text-align: center;
   height: 100%;
 }
 
 h1 {
-  color: gold;
+  color: #09E2E6;
   margin: 0 auto;
-  background-color: darkviolet;
+  background-color: #6309E6;
   padding: 40px;
 }
 

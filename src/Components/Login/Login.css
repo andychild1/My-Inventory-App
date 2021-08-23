@@ -9,6 +9,23 @@
     width: 150px;
     font-size: 20px;
     cursor: pointer;
+    border-radius: 20px;
+    background-color: #6309E6;
+    transition: background-color 250ms linear 150ms, color 250ms linear 150ms;
+}
+
+.start:hover {
+    background-color: #4F0AF0;
+    color: #09E2E6;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    color: #6309E6;
+    margin-top: 80px;
 }
 
 @media screen and (max-width: 800px) {
