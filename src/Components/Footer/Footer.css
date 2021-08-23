@@ -4,7 +4,10 @@
     background-color: darkviolet;
     padding: 30px;
     color: gold;
-    margin-top: 186px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
   }
 
   .gitIcon {
@@ -17,8 +20,10 @@
   @media screen and (max-width: 800px) {
     .foot {
       padding: 10px;
-      margin-top: 220px;
       font-size: 10px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
     }
 
     .gitIcon {
