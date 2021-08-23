@@ -15,7 +15,6 @@ ReactDOM.render(
   clientId={clientId}
   redirectUri={window.location.origin}
   >
-    <h3>{clientId}</h3>
   <AppContainer />
     </Auth0Provider>,
   
